@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RmSettingsViewController.swift
 //  RickAndMorty
 //
 //  Created by Tu Nguyen on 24/09/2024.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RmSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        title = "Settings"
     }
 
-
 }
-
