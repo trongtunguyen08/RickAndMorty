@@ -14,6 +14,17 @@ class RMCharacterViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Characters"
+        
+        let request = RMRequest(endpoint: .character, pathComponents: ["1"])
+        
+        RMService.shared.execute(request, expecting: RMCharacter.self) { result in
+            switch result {
+            case .success(let character):
+                print(character)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
 }
